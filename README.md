@@ -2,19 +2,26 @@
 The Banking System Simulation project is a console-based application designed to replicate essential functionalities of a banking system using C++ and object-oriented principles. It allows users to manage customers and their accounts, facilitating operations like deposits and withdrawals. The Banking System employs a combination of data structures to efficiently manage accounts and transactions. Linked lists are utilized within each account to maintain transaction histories, allowing chronological recording of deposits and withdrawals. Hash maps (unordered_map) play a crucial role in managing multiple accounts for each customer, providing fast access and modification capabilities based on account numbers. These structures ensure that account details can be retrieved swiftly during banking operations. Furthermore, a Binary Search Tree (BST) organizes customers based on unique IDs, facilitating rapid insertion, deletion, and retrieval of customer records. This hierarchical organization enhances scalability and performance, making the system robust enough to handle extensive customer databases effectively.
 ## Key Features
   - Customer and Account Management:
-    -Add Customers: Allows adding new customers with unique IDs, names, and addresses.
-    -Manage Accounts: Associates multiple accounts with each customer, specifying account numbers, types, and initial balances.
-    -Delete Accounts: Supports deleting accounts associated with a customer, ensuring efficient management of customer data.
+    - Add Customers: Allows adding new customers with unique IDs, names, and addresses.
+    - Manage Accounts: Associates multiple accounts with each customer, specifying account numbers, types, and initial balances.
+    - Delete Accounts: Supports deleting accounts associated with a customer, ensuring efficient management of customer data.
   - Transaction Processing:
-    -Deposit Funds: Enables customers to deposit money into their accounts, updating account balances and logging transactions.
-    -Withdraw Funds: Facilitates withdrawals from accounts, ensuring sufficient balance checks and updating transaction histories accordingly.
-    -Transaction Logging: Maintains a record of all financial transactions, providing an audit trail for accountability and transparency.
+    - Deposit Funds: Enables customers to deposit money into their accounts, updating account balances and logging transactions.
+    - Withdraw Funds: Facilitates withdrawals from accounts, ensuring sufficient balance checks and updating transaction histories accordingly.
+    - Transaction Logging: Maintains a record of all financial transactions, providing an audit trail for accountability and transparency.
   - Data Management:
-    -Linked List for Transactions: Tracks transaction histories within each account using a linked list, allowing efficient retrieval and modification of transaction records.
-    -Hash Map for Account Management: Utilizes an unordered map to manage accounts within each customer, enabling fast lookup and modification operations based on account numbers.
+    - Linked List for Transactions: Tracks transaction histories within each account using a linked list, allowing efficient retrieval and modification of transaction records.
+    - Hash Map for Account Management: Utilizes an unordered map to manage accounts within each customer, enabling fast lookup and modification operations based on account numbers.
     - Binary Search Tree (BST) for Customer Organization: Organizes customers in a BST based on unique IDs, facilitating efficient insertion, deletion, and search operations.
   - User Interface:
-    -Console-Based Interface: Offers a user-friendly menu-driven interface for interacting with the banking system. Users can perform operations such as creating customers, adding accounts, depositing or withdrawing funds, and viewing transaction histories.
+    - Console-Based Interface: Offers a user-friendly menu-driven interface for interacting with the banking system. Users can perform operations such as creating customers, adding accounts, depositing or withdrawing funds, and viewing transaction histories.
+
+## Classes
+
+- Transaction: Represents financial transactions with types (e.g., deposit, withdrawal) and amounts.
+- Account: Manages individual bank accounts, tracks balances, and maintains transaction histories using a linked list.
+- Customer: Represents bank customers with unique identifiers, names, addresses, and manages multiple accounts using an unordered map for efficient access.
+- TreeNode and CustomerBST: Implement a Binary Search Tree (BST) to organize and manage customers based on their IDs, facilitating efficient insertion, deletion, and retrieval operations.
     
 ## Real-World Application
   
